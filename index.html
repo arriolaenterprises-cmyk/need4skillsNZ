@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -720,7 +719,7 @@ header.scrolled {
 
 
 
-<section id="next-steps" class="section fade-in-section">
+<section id="next-steps" class="section fade-in-section" style="background: var(--bg-light);>
     <div class="container">
         <h2 class="section-title">Your Journey Starts Here</h2>
         <div class="grid-container">
@@ -747,25 +746,91 @@ header.scrolled {
 </section>
 
 
-<section id="apply-now">
-    <h2>Start My Application Now</h2>
 
-    <form id="applyForm" style="max-width:500px;margin:auto;">
-        <input type="text" name="name" placeholder="Full Name" required style="width:100%;padding:10px;margin:10px 0;">
-        <input type="email" name="email" placeholder="Email" required style="width:100%;padding:10px;margin:10px 0;">
-        <textarea name="message" placeholder="Your Experience" required style="width:100%;padding:10px;margin:10px 0;"></textarea>
+<section id="apply-now" class="section fade-in-section">
+    <div class="container">
+        <h2 class="section-title">Start My Application Now</h2>
+        <div class="feature-card" style="max-width: 800px; margin: 0 auto; text-align: left;">
+            <form action="#" method="POST" style="display: grid; gap: 1.5rem;">
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label style="font-weight: 600; font-size: 0.9rem;">Full Name *</label>
+                        <input type="text" placeholder="First and Last Name" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; margin-top: 5px;" required>
+                    </div>
+                    <div>
+                        <label style="font-weight: 600; font-size: 0.9rem;">Email Address *</label>
+                        <input type="email" placeholder="email@example.com" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; margin-top: 5px;" required>
+                    </div>
+                </div>
 
-        <button type="submit" class="btn-cta">Submit Application</button>
-    </form>
+                <div>
+                    <label style="font-weight: 600; font-size: 0.9rem;">Primary Trade / Skillset *</label>
+                    <select style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; margin-top: 5px;">
+                        <option>Painter (Commercial/Residential)</option>
+                        <option>Carpenter / Joiner</option>
+                        <option>Chef / Hospitality Professional</option>
+                        <option>Machine Operator / Industrial</option>
+                        <option>Other (Please specify in message)</option>
+                    </select>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label style="font-weight: 600; font-size: 0.9rem;">Do you have a valid Passport? *</label>
+                        <select style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; margin-top: 5px;">
+                            <option>Yes (Valid for 1 year+)</option>
+                            <option>No / For Renewal</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="font-weight: 600; font-size: 0.9rem;">Previous NZ Visa Holder? *</label>
+                        <select style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; margin-top: 5px;">
+                            <option>No</option>
+                            <option>Yes (Work Visa)</option>
+                            <option>Yes (Visitor/Other)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label style="font-weight: 600; font-size: 0.9rem;">Brief Professional Summary</label>
+                    <textarea rows="4" placeholder="Tell us about your years of experience and current location..." style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; margin-top: 5px;"></textarea>
+                </div>
+
+                <button type="submit" class="btn-apply" style="width: 100%; padding: 1.2rem; border: none; cursor: pointer;">SUBMIT INQUIRY</button>
+            </form>
+        </div>
+    </div>
 </section>
 
-
-    <footer>
-        <p>&copy; 2026 Need4Skills NZ. All rights reserved.</p>
-        <p style="opacity: 0.6; font-size: 0.8rem; margin-top: 1rem;">Hamilton, Waikato, New Zealand | Choose Expertise since 2017</p>
-    </footer>
-
-
+<footer style="background: var(--primary); color: white; padding: 4rem 10% 2rem; border-top: 4px solid var(--accent);">
+    <div class="grid-container" style="text-align: left; gap: 4rem;">
+        <div>
+            <h3 style="color: var(--accent);">Need4Skills NZ</h3>
+            <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 1rem;">Choose Expertise since 2017. <br>Dedicated to connecting Filipino talent with the New Zealand dream.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul style="list-style: none; padding: 0; margin-top: 1rem; font-size: 0.9rem;">
+                <li><a href="#introduction" style="color: white; text-decoration: none; opacity: 0.7;">Home</a></li>
+                <li><a href="#apply" style="color: white; text-decoration: none; opacity: 0.7;">Apply Now</a></li>
+                <li><a href="mailto:need4skillsnz@gmail.com" style="color: white; text-decoration: none; opacity: 0.7;">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Legal</h4>
+            <ul style="list-style: none; padding: 0; margin-top: 1rem; font-size: 0.8rem;">
+                <li><a href="#terms" onclick="alert('Terms & Conditions: By using this site, you agree to provide truthful information for recruitment purposes. We are not responsible for visa denials by NZ Immigration.')" style="color: white; text-decoration: none; opacity: 0.7;">Terms & Conditions</a></li>
+                <li style="margin-top: 10px;"><a href="#privacy" onclick="alert('Privacy Policy: We collect your data solely for job matching and deployment. Your data is never sold to third parties.')" style="color: white; text-decoration: none; opacity: 0.7;">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 3rem; padding-top: 2rem; font-size: 0.75rem; opacity: 0.5;">
+        &copy; 2026 Need4Skills NZ. All rights reserved. | Hamilton, Waikato, New Zealand.
+    </div>
+</footer>
 
 
 
